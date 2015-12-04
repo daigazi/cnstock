@@ -1,0 +1,17 @@
+{
+    "contents" : "项目            函数名称                  baseUrl                                       appendUrl\n主要财务指标   mfi   http://quotes.money.163.com/service/zycwzb_   .html?type=report\n盈利能力       prof                  http://quotes.money.163.com/service/zycwzb_   .html?type=report&part=ylnl\n偿还能力       pay                   http://quotes.money.163.com/service/zycwzb_   .html?type=report&part=chnl\n成长能力       grow                  http://quotes.money.163.com/service/zycwzb_   .html?type=report&part=cznl\n财务报表摘要    fs   http://quotes.money.163.com/service/cwbbzy_    .html\n资产负债表      balance              http://quotes.money.163.com/service/zcfzb_     .html\n利润表          income               http://quotes.money.163.com/service/lrb_       .html\n现金流量表      cash                 http://quotes.money.163.com/service/xjllb_     .html\n\n",
+    "created" : 1449124957995.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3466250475",
+    "id" : "B2387A97",
+    "lastKnownWriteTime" : 1449144888,
+    "path" : "D:/Git/cnstock/网易可下载数据表.R",
+    "project_path" : "网易可下载数据表.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

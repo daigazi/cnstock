@@ -1,0 +1,17 @@
+{
+    "contents" : "library(DiagrammeR)\n\ngrViz(\"\ndigraph DAG {\n\n  # Intialization of graph attributes\n  graph [overlap = true]\n\n  # Initialization of node attributes\n  node [shape = box,\n        fontname = Helvetica,\n        color = blue,\n        type = box,\n        fixedsize = true]\n\n  # Initialization of edge attributes\n  edge [color = green,\n        rel = yields]\n\n  # Node statements\n '销售净利率';'总资产收益率';'权益乘数';\n\n  # Edge statements\n  '销售净利率'->'总资产收益率'; '总资产收益率'->'权益乘数';\n \n}\n\")\n'总资产收益率';'总资产收益率';'权益乘数';'销售净利率';'总资产周转率';'净利润';'营业收入';'平均资产总额','全部成本';'投资收益';'所得税';'其他';'营业成本';'销售费用';'管理费用';'财务费用'\n\n\n\n## Not run: \n# Create an empty graph\ngraph <- create_graph()\n\n# Create a graph with nodes but no edges\nnodes <- create_nodes(nodes = c(\"a\", \"b\", \"c\", \"d\"))\n\ngraph <- create_graph(nodes_df = nodes)\ndisplay_graph_object(graph, width = 640)\n# Create a graph with nodes with values, types, labels\nnodes <- create_nodes(nodes = c(\"a\", \"b\", \"c\", \"d\"),\n                      label = TRUE,\n                      type = c(\"type_1\", \"type_1\",\n                               \"type_5\", \"type_2\"),\n                      shape = c(\"circle\", \"circle\",\n                                \"rectangle\", \"rectangle\"),\n                      values = c(3.5, 2.6, 9.4, 2.7))\n\ngraph <- create_graph(nodes_df = nodes)\n\n# Create a graph from an edge data frame, the nodes will\nedges <- create_edges(from = c(\"a\", \"b\", \"c\"),\n                      to = c(\"d\", \"c\", \"a\"),\n                      rel = \"leading_to\")\n\ngraph <- create_graph(edges_df = edges)\n\n# Create a graph with both nodes and nodes defined, and,\n# add some default attributes for nodes and edges\ngraph <- create_graph(nodes_df = nodes,\n                      edges_df = edges,\n                      node_attrs = \"fontname = Helvetica\",\n                      edge_attrs = c(\"color = blue\",\n                                     \"arrowsize = 2\"))\n\n## End(Not run)",
+    "created" : 1449133023574.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2536979167",
+    "id" : "93B81AD2",
+    "lastKnownWriteTime" : 1449135910,
+    "path" : "D:/Git/cnstock/duban.R",
+    "project_path" : "duban.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
