@@ -1,0 +1,18 @@
+{
+    "contents" : "test=setRefClass(\"test\",\n                    fields = list(name=\"character\"),\n                    methods=list(\n                            haha=function()\n                                    print(\"hehe nimei\")\n                 ))\ntest1=test$new(name=\"xiaopengyou\")\ntest$methods(\n        hehe=function(){\n                haha()\n                print(\"ni cai you bing\")\n        }\n)\ntest1$hehe()\n",
+    "created" : 1449967733031.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "808806442",
+    "id" : "DC0516D6",
+    "lastKnownWriteTime" : 578055781,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 0,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

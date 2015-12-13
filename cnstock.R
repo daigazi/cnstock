@@ -28,7 +28,7 @@ cnstock=setRefClass("cnstock",
                                   path <<- "data"
                                   urldf<<- data.frame(
                                    name=c("mfi","prof","pay","grow","fs","balance",
-                                          "income","cash","intro","product","industry","region"),
+                                          "income","cash","intro","product","industry","region","pe","pb","k"),
                                    baseUrl=c(
                                          "http://quotes.money.163.com/service/zycwzb_",
                                           "http://quotes.money.163.com/service/zycwzb_",
@@ -41,14 +41,27 @@ cnstock=setRefClass("cnstock",
                                          "http://quotes.money.163.com/f10/gszl_",
                                          "http://quotes.money.163.com/service/gszl_",
                                          "http://quotes.money.163.com/service/gszl_",
-                                         "http://quotes.money.163.com/service/gszl_"),
+                                         "http://quotes.money.163.com/service/gszl_",
+                                         "http://biz.finance.sina.com.cn/company/compare/img_syl_compare.php?stock_code=",
+                                         "http://biz.finance.sina.com.cn/company/compare/img_sjl_compare.php?stock_code=",
+                                         "http://image.sinajs.cn/newchart/"),
                                     appendUrl=c(
                                             ".html?type=report",
                                             ".html?type=report&part=ylnl",
                                             ".html?type=report&part=chnl",
                                             ".html?type=report&part=cznl",
                                             ".html",".html",".html",".html",
-                                            ".html#01f01",".html?type=cp",".html?type=hy",".html?type=dy"))
+                                            ".html#01f01",".html?type=cp",".html?type=hy",".html?type=dy",
+                                            ",&limit=",",&limit=","/n/"))
+                          },
+                          stockBrand=function(){
+                                  sh="600"
+                                  if(grepl(stockNo,pattern=sh)){
+                                          brand="sh" 
+                                  }else{
+                                          brand="sz"
+                                  }
+                                  return(brand)
                           }
                           )
                   )
